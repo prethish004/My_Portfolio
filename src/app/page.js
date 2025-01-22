@@ -10,7 +10,6 @@ import Education from "./components/Education";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-gradient-to-b from-[#121212] via-gray-900 to-gray-800">
-    {/* <main className="flex min-h-screen flex-col bg-hero-pattern bg-cover bg-center bg-fixed"> */}
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
@@ -18,7 +17,6 @@ export default function Home() {
         <AboutSection />
         <Education/>
         <ProjectsSection />
-
         <ServicesSection/>
         <EmailSection />
       </div>
