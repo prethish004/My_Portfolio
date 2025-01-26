@@ -287,24 +287,24 @@ const Education = () => {
                         className="absolute left-6 md:left-9 top-8 w-[2px] md:w-[4px] h-full bg-primary origin-top hidden lg:block"
                     />
                     <ul className="w-full flex flex-col items-start justify-between">
-                        <Details
-                            type="Bachelor Of Technology in Artificial Intelligence and Machine Learning"
-                            time="2021 – Expected March 2025"
-                            place="Kongu Engineering College"
-                            info="Cumulative GPA: 7.58/10. Relevant courses include Machine Learning, Deep Learning, and Ethical AI."
-                        />
-                        <Details
-                            type="High School (HSC)"
-                            time="2020 – 2021"
-                            place="CEOA Matriculation Higher Secondary School"
-                            info="Scored 84.064%. Key subjects: Physics, Chemistry, and Mathematics."
-                        />
-                        <Details
-                            type="Secondary School (CBSE)"
-                            time="2018 – 2019"
-                            place="GEMS Our Own English High School (Boys Branch)"
-                            info="Scored 73.33%. Focus on Mathematics and Science."
-                        />
+                         <Details
+                             type="Bachelor Of Technology in Artificial Intelligence and Data Science"
+                             time="2021 – Expected March 2025"
+                             place="Kongu Engineering College"
+                             info="Cumulative GPA: 7.58/10. Relevant courses include Machine Learning, Deep Learning, and Ethical AI."
+                         />
+                         <Details
+                             type="High School (HSC)"
+                             time="2020 – 2021"
+                             place="Erode Hindu Kalvi Niliyalam Matriculation Hr.Sec.School"
+                             info="Scored 79.56%. Key subjects: Physics,Computer Science, Chemistry, and Mathematics."
+                         />
+                         <Details
+                             type="Secondary School (SSLC)"
+                             time="2018 – 2019"
+                             place="Erode Hindu Kalvi Niliyalam Matriculation Hr.Sec.School"
+                             info="Scored 73.8%. Focus on Mathematics and Science."
+                         />
                     </ul>
                 </div>
 
