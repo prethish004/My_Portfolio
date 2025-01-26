@@ -275,7 +275,9 @@ const Education = () => {
             >
                 {/* Education Section */}
                 <div className="w-full lg:w-[45%] mb-12 lg:mb-0">
-                 
+                    <h3 className="text-3xl font-semibold text-primary mb-6 text-center lg:text-left">
+                        Education
+                    </h3>
                     <motion.div
                         style={{ scaleY: scrollYProgress }}
                         className="absolute left-9 top-8 w-[4px] h-full bg-primary origin-top hidden lg:block"
@@ -304,7 +306,9 @@ const Education = () => {
 
                 {/* Courses Section */}
                 <div className="w-full lg:w-[45%]">
-    
+                    <h3 className="text-3xl font-semibold text-primary mb-6 text-center lg:text-left">
+                        Courses
+                    </h3>
                     <ul className="w-full flex flex-col items-start justify-between ml-4">
                         <Details
                             type="Design & Implementation of Human-Computer Interfaces"
@@ -330,5 +334,7 @@ const Education = () => {
         </div>
     );
 };
+
+export default Education;
 
 export default Education;
