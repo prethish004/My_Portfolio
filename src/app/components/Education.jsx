@@ -226,7 +226,7 @@ const Details = ({ type, time, place, info }) => {
     return (
         <motion.li
             ref={ref}
-            className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col relative pl-8"
+            className="my-8 first:mt-0 last:mb-0 w-[90%] md:w-[60%] mx-auto flex flex-col relative pl-8"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{
@@ -247,11 +247,13 @@ const Details = ({ type, time, place, info }) => {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, type: "spring" }}
             >
-                <h3 className="capitalize font-bold text-2xl text-white">{type}</h3>
-                <span className="capitalize font-medium text-white block">
+                <h3 className="capitalize font-bold text-lg md:text-2xl text-white">{type}</h3>
+                <span className="capitalize font-medium text-white block text-sm md:text-base">
                     {time} | {place}
                 </span>
-                <p className="font-medium w-full mt-2 text-white text-justify">{info}</p>
+                <p className="font-medium w-full mt-2 text-white text-justify text-sm md:text-base">
+                    {info}
+                </p>
             </motion.div>
         </motion.li>
     );
@@ -267,22 +269,24 @@ const Education = () => {
     return (
         <div className="my-16 scroll-mt-20">
             {/* Section Header */}
-            <h2 className="text-4xl font-bold text-center text-white mb-8">Education & Courses</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-center text-white mb-8">
+                Education & Courses
+            </h2>
 
             <div
                 ref={ref}
-                className="w-[75%] mx-auto relative flex flex-col lg:flex-row justify-between lg:w-[90%] md:w-full"
+                className="w-[90%] mx-auto relative flex flex-col lg:flex-row justify-between lg:w-[85%] md:w-full"
             >
                 {/* Education Section */}
                 <div className="w-full lg:w-[45%] mb-12 lg:mb-0">
-                    <h3 className="text-3xl font-semibold text-primary mb-6 text-center lg:text-left">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-primary mb-6 text-center lg:text-left">
                         Education
                     </h3>
                     <motion.div
                         style={{ scaleY: scrollYProgress }}
-                        className="absolute left-9 top-8 w-[4px] h-full bg-primary origin-top hidden lg:block"
+                        className="absolute left-6 md:left-9 top-8 w-[2px] md:w-[4px] h-full bg-primary origin-top hidden lg:block"
                     />
-                    <ul className="w-full flex flex-col items-start justify-between ml-4">
+                    <ul className="w-full flex flex-col items-start justify-between">
                         <Details
                             type="Bachelor Of Technology in Artificial Intelligence and Machine Learning"
                             time="2021 – Expected March 2025"
@@ -306,10 +310,10 @@ const Education = () => {
 
                 {/* Courses Section */}
                 <div className="w-full lg:w-[45%]">
-                    <h3 className="text-3xl font-semibold text-primary mb-6 text-center lg:text-left">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-primary mb-6 text-center lg:text-left">
                         Courses
                     </h3>
-                    <ul className="w-full flex flex-col items-start justify-between ml-4">
+                    <ul className="w-full flex flex-col items-start justify-between">
                         <Details
                             type="Design & Implementation of Human-Computer Interfaces"
                             time="Course Duration: 3 Months"
